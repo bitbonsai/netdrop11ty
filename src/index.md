@@ -1,5 +1,6 @@
 ---
-layout: 'base.njk'
+title: { { siteName } }
+layout: base.njk
 ---
 
 ![{{ meta.title }}](/img/logos.svg)
