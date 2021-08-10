@@ -6,7 +6,8 @@
 	"scripts": {
 		"get-content": "node get-content-from-dbx.js",
 		"dev": "npm run get-content && npx @11ty/eleventy --serve",
-    "debug": "DEBUG=* npx @11ty/eleventy --input=src",
+		"build": "npm run get-content && npx @11ty/eleventy",
+		"debug": "DEBUG=* npx @11ty/eleventy --input=src",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
