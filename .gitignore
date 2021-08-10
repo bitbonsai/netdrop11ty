@@ -2,3 +2,4 @@ node_modules
 .env
 launch.json
 _site
+README.md
