@@ -23,6 +23,13 @@ code {
 	outline: 1px solid #ccc;
 	margin: 0 0.2em;
 }
+.biglogo {
+	display: block;
+	width: 15em;
+	margin: 0 auto 3em auto;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 3em;
+}
 
 .container {
 	max-width: 75ch;

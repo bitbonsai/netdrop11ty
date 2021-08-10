@@ -3,7 +3,9 @@ title: netdrop11ty = Netlify + Dropbox + 11ty
 layout: base.njk
 ---
 
-![{{ meta.title }}](/img/logos.svg)
+<img class="biglogo" src="/img/favicon.svg" alt="{{ meta.siteName }}">
+
+![{{ meta.siteName }}](/img/logos.svg)
 
 The content below is being fetched from Dropbox:
 
