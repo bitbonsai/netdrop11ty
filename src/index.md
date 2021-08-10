@@ -1,5 +1,4 @@
 ---
-title: 'DBX'
 layout: 'base.njk'
 ---
 
