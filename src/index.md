@@ -1,5 +1,5 @@
 ---
-title: { { siteName } }
+title: { { meta.siteName } }
 layout: base.njk
 ---
 
