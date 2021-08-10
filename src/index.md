@@ -1,5 +1,5 @@
 ---
-title: { { meta.siteName } }
+title: netdrop11ty = Netlify + Dropbox + 11ty
 layout: base.njk
 ---
 
