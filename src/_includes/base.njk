@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}{% if page.url != '/' %} | {{ meta.siteName }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+</head>
+
+<body {% if bodyClass %}class="{{ bodyClass }}" {% endif %}>
+    <section class=" container">
+        {{ content | safe }}
+    </section>
+
+    <footer class="container">
+        <hr>
+        <div>
+            <p>&copy; {{ meta.year }} {{ meta.siteName }}{% if meta.authorName %} • {{ meta.authorName }}{% endif %}</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,16 +1,19 @@
 {
-	"name": "NetDrop11ty",
+	"name": "netdrop11ty",
 	"version": "1.0.0",
 	"description": "Netlify 11ty site fetching content from Dropbox",
 	"main": "",
 	"scripts": {
 		"get-content": "node get-content-from-dbx.js",
+		"dev": "npm run get-content && npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy --input=src",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"@11ty/eleventy": "^0.12.1",
 		"dotenv": "^10.0.0",
 		"dropbox": "^10.5.0",
 		"fs-extra": "^10.0.0"
