@@ -1,9 +1,9 @@
 ---
-name: Skimbleshanks
-image: cat3.jpg
+name: Cindy Clawford
+image: cat5.jpg
 year: 2021
 source: https://cataas.com/cat
-age: 3 years
+age: 2.125 years
 species: Unimportant
 ---
 

@@ -3,7 +3,7 @@ body {
 	box-sizing: border-box;
 	color: rgb(41, 41, 41);
 	font-family: system-ui, sans-serif;
-	padding: 3em;
+	padding: 2em;
 	line-height: 150%;
 }
 a {
@@ -23,12 +23,21 @@ code {
 	outline: 1px solid #ccc;
 	margin: 0 0.2em;
 }
+img {
+	max-width: 100%;
+}
+h1 {
+	font-size: 2em;
+	font-weight: normal;
+	opacity: 0.7;
+	margin-top: 2em;
+}
 .biglogo {
 	display: block;
 	width: 15em;
 	margin: 0 auto 3em auto;
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 3em;
+	padding-bottom: 2em;
 }
 
 .container {

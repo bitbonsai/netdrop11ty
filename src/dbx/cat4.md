@@ -1,9 +1,9 @@
 ---
-name: Skimbleshanks
-image: cat3.jpg
+name: Catosaur
+image: cat4.jpg
 year: 2021
 source: https://cataas.com/cat
-age: 3 years
+age: 65M years
 species: Unimportant
 ---
 

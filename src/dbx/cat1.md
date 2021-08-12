@@ -1,12 +1,10 @@
 ---
-name: Mr. Mistoffelees
-image: cat2.jpg
+name: Reed Richards
+image: cat1.jpg
 year: 2021
 source: https://cataas.com/cat
 age: 1 year
 species: Unimportant
-tags: dbx
-layout: page.njk
 ---
 
-![{{ name }}](/dbx/{{ image }})
+![{{ name }} age: {{ age }}](/dbx/{{ image }})
