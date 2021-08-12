@@ -42,6 +42,8 @@ Writing Markdown might not be super easy for some, but there are tools to help, 
 
 This project is part of [freecommerce.com.au](https://freecommerce.com.au), an initiative to help Australian small business to have an online e-commerce presence for free.
 
+And it can be checked/cloned on Github, at https://github.com/bitbonsai/netdrop11ty
+
 ---
 
 # 5 steps instructions to success
