@@ -1,6 +1,6 @@
 # netdrop11ty
 
-<img src="src/img/favicon.svg" width="300 />
+![netdrop11ty logo](src/img/logos.svg)
 
 Extremely minimal Eleventy starter to kickstart a simple multi-page site getting content from Dropbox Folders.
 
