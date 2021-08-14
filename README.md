@@ -4,6 +4,8 @@
 
 Extremely minimal Eleventy starter to kickstart a simple multi-page site getting content from Dropbox Folders.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ee584beb-1b30-4692-82b2-ecf8ee8d7b7d/deploy-status)](https://app.netlify.com/sites/netdrop11ty/deploys)
+
 ## TL;DR
 
 1. Place content (.md files, images) on a Dropbox folder
