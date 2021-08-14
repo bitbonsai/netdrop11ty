@@ -80,7 +80,6 @@ Then, go to `Build & Deploy` → `Environment variables`. You'll create 3 `ENV` 
 CONTENT_DIR: ./src/dbx
 DBX_ACCESS_TOKEN: [YOUR DROPBOX TOKEN]
 NETLIFY_BUILD_HOOK_URL: [THE GENERATED BUILD HOOK IN THE STEP ABOVE]
-</div>
 ```
 
 #### 3.2 Netlify functions
