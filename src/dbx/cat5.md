@@ -8,3 +8,4 @@ species: Unimportant
 ---
 
 ![{{ name }} age: {{ age }}](/dbx/{{ image }})
+

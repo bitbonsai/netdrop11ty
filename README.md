@@ -76,12 +76,26 @@ Next, create a `Build hook`. Just click the button `Add` and accept defaults. Gi
 
 Then, go to `Build & Deploy` → `Environment variables`. You'll create 3 `ENV` variables:
 
-<div class="dbx-contents pre">CONTENT_DIR: ./src/dbx
+```
+CONTENT_DIR: ./src/dbx
 DBX_ACCESS_TOKEN: [YOUR DROPBOX TOKEN]
 NETLIFY_BUILD_HOOK_URL: [THE GENERATED BUILD HOOK IN THE STEP ABOVE]
 </div>
+```
 
 #### 3.2 Netlify functions
+
+![Functions menu](src/img/netlify5.png)
+
+Go to the functions menu, and change its `Function Directory` settings to `src/_netlify-function`.
+
+In the next deployment, this will create a function that you'll need next. Load the [functions](https://app.netlify.com/sites/netdrop11ty/functions) page, and you should now see:
+
+![dbx-webhook function](src/img/netlify7.png)
+
+Clicking on it will give you access to the function URL that we need. It's easy to infer as well. In my case is `https://netdrop11ty.netlify.app/.netlify/functions/dbx-webhook`
+
+---
 
 Dropbox has a particularity that we need to deal with through Netlify's functions. The first request you do to dbx API will give you a _challenge_ query string parameter and requires another request with the same parameter back. After that, you can actually request the files.
 
@@ -96,16 +110,6 @@ Therefore we need a [Netlify function](https://docs.netlify.com/functions/overvi
 I got the [function](https://github.com/jimniels/netlibox/blob/master/src/_netlify-functions/dropbox-webhook.js) from netlibox repo, thanks once more, [Jim](https://github.com/jimniels)!
 
 It's possible to test this function locally if you install `netlify-lambda`. I haven't because it has some security issues and installs webpack; I preferred not to. If you do, please check [netlibox](https://github.com/jimniels/netlibox/), which does.
-
-![Functions menu](src/img/netlify5.png)
-
-Go to the functions menu, and change its `Function Directory` settings to `src/_netlify-function`.
-
-In the next deployment, this will create a function that you'll need next. Load the [functions](https://app.netlify.com/sites/netdrop11ty/functions) page, and you should now see:
-
-![dbx-webhook function](src/img/netlify7.png)
-
-Clicking on it will give you access to the function URL that we need. It's easy to infer as well. In my case is `https://netdrop11ty.netlify.app/.netlify/functions/dbx-webhook`
 
 ### 4. Netlify functions into Dropbox
 
