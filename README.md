@@ -78,7 +78,7 @@ Next, create a `Build hook`. Just click the button `Add` and accept defaults. Gi
 
 Then, go to `Build & Deploy` → `Environment variables`. You'll create 3 `ENV` variables:
 
-```
+```shell
 CONTENT_DIR: ./src/dbx
 DBX_ACCESS_TOKEN: [YOUR DROPBOX TOKEN]
 NETLIFY_BUILD_HOOK_URL: [THE GENERATED BUILD HOOK IN THE STEP ABOVE]
@@ -95,6 +95,16 @@ In the next deployment, this will create a function that you'll need next. Load 
 ![dbx-webhook function](src/img/netlify7.png)
 
 Clicking on it will give you access to the function URL that we need. It's easy to infer as well. In my case is `https://netdrop11ty.netlify.app/.netlify/functions/dbx-webhook`
+
+`https://netdrop11ty.netlify.app`: Netlify's site domain
+
+`.netlify/functions`: Auto-generated functions folder (you won't see it in your machine)
+
+`dbx-webhook`: The filename, that you'll find in your machine at `./src/_netlify/_netlify-function/dbx-webhook.js`
+
+##### Important
+
+If you edit your site name, this changes your URL. Remember to change the `webhook` setting in your Dropbox app settings, otherwise it would call the wrong URL.
 
 ---
 
